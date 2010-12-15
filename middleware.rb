@@ -5,7 +5,7 @@ require 'net/http'
 require 'uri'
 
 get '/' do
-  "<h1>Hoptoad &#10084; Heroku</h1><p>Hoptoad deploy tracking using Heroku's HTTP Post deploy hook</p><h2>Usage</h2><pre><code><strong>$</strong> heroku addons:add deployhooks:http url=http://hoptoad-loves.heroku.com/YOUR_HOPTOAD_API_KEY/YOUR_RACK_ENV</code></pre><p>Change <code>YOUR_HOPTOAD_API_KEY</code> and <code>YOUR_RACK_ENV</code> to your settings.</p>"
+  %(<h1>Hoptoad &#10084; Heroku</h1><p>Hoptoad deploy tracking using Heroku's HTTP Post deploy hook</p><h2>Usage</h2><pre><code><strong>$</strong> heroku addons:add deployhooks:http url=http://hoptoad-loves.heroku.com/YOUR_HOPTOAD_API_KEY/YOUR_RACK_ENV</code></pre><p>Change <code>YOUR_HOPTOAD_API_KEY</code> and <code>YOUR_RACK_ENV</code> to your settings.</p><h2>Source Code</h2><p>All the source code is on <a href="http://github.com/sikachu/hoptoad-loves-heroku">GitHub</a>. All feedbacks and contributions are welcome. If it doesn't work, please open an issue on <a href="http://github.com/sikachu/hoptoad-loves-heroku">GitHub</a> to notify me.<p>)
 end
 
 post '/:api_key/:rack_env' do

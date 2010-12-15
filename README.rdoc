@@ -1,0 +1,24 @@
+= Hoptoad-loves-Heroku
+
+Hoptoad deploy tracking using Heroku's HTTP Post deploy hook
+
+== Usage
+
+Go to your Heroku project folder and add the deploy hook like this:
+
+    $ heroku addons:add deployhooks:http url=http://hoptoad-loves.heroku.com/YOUR_HOPTOAD_API_KEY/YOUR_RACK_ENV
+
+Change <tt>YOUR_HOPTOAD_API_KEY</tt> and <tt>YOUR_RACK_ENV</tt> to your settings.
+
+== Limitations
+
+* 'Deployed by' name will be your Heroku account's E-Mail address
+* 'Repository URL' will be Heroku's repository URL
+
+== Contributing & Bug Report
+
+Please use Github's Issue tracker or send me a pull request if you think it's missing anything, or file a bug report if you found something wrong.
+
+== Contact
+
+This application is written by Prem Sichanugrist. You can reach me at @sikachu or my blog at http://sikachu.com.
